@@ -1,4 +1,4 @@
-package testDB;
+package test.wyj.util;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
