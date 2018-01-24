@@ -39,12 +39,12 @@ public class StatusRecognise extends HttpServlet {
 		if(employeeID == null || "".equals(employeeID)) {		//判断是否输入员工编号
 			request.setAttribute("error", "请输入员工编号!");
 			dispatcher = servletContext.
-					getRequestDispatcher("/statusRecognise.jsp");//设置跳转页面
+					getRequestDispatcher("/login.jsp");//设置跳转页面
 		}else {
 			if(password == null || "".equals(password)) {		//判断是否输入系统密码
 				request.setAttribute("error", "请输入系统口令!");
 				dispatcher = servletContext.
-					getRequestDispatcher("/statusRecognise.jsp");//设置跳转页面
+					getRequestDispatcher("/login.jsp");//设置跳转页面
 			}else {
 				EmployeeDAO employeeDAO = 
 					EmployeeDAOFactory.getEmployeeDAOInstance();//获得DAO实现类实例
@@ -53,7 +53,7 @@ public class StatusRecognise extends HttpServlet {
 				if(employee == null) {
 					request.setAttribute("error", "该员工编号不存在!");
 					dispatcher = servletContext.
-						getRequestDispatcher("/statusRecognise.jsp");
+						getRequestDispatcher("/login.jsp");
 				} else {
 					if(password.equals(employee.getPassword())) {
 						request.getSession().
@@ -63,7 +63,7 @@ public class StatusRecognise extends HttpServlet {
 					} else {
 						request.setAttribute("error", "系统口令不正确!");
 						dispatcher = servletContext.
-							getRequestDispatcher("/statusRecognise.jsp");
+							getRequestDispatcher("/login.jsp");
 					}
 				}
 			}
