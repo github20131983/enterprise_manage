@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+*{font-size:9pt;border:0;margin:0;padding:0;}
+body{font-family:'微软雅黑'; margin:0 auto;min-width:980px;}
+ul{display:block;margin:0;padding:0;list-style:none;}
+li{display:block;margin:0;padding:0;list-style: none;}
+img{border:0;}
+/*login*/
+.loginbox{width:692px; height:336px; background:url(../images/login/logininfo.png) no-repeat; margin-top:30px;}
+.loginbox ul{margin-top:88px; margin-left:285px;}
+.loginbox ul li{margin-bottom:25px;}
+.loginbox ul li label{color:#687f92; padding-left:25px;}
+.loginbox ul li label a{color:#687f92;}
+.loginbox ul li label a:hover{color:#3d96c9;}
+.loginbox ul li label input{margin-right:5px;}
+.loginuser{width:299px; height:48px; background:url(../images/login/loginuser.png) no-repeat; border:none; line-height:48px; padding-left:44px; font-size:14px; color:#90a2bc;}
+.loginpwd{width:299px; height:48px; background:url(../images/login/loginpassword.png) no-repeat; border:none;line-height:48px; padding-left:44px; font-size:14px; color:#90a2bc;}
+.loginbtn{width:111px;height:35px; background:url(../images/login/buttonbg.png) repeat-x; font-size:14px; font-weight:bold; color:#fff;cursor:pointer; line-height:35px;}
+.loginbm{height:50px; line-height:50px; text-align:center; background:url(../images/login/loginbg2.png) repeat-x;position:absolute; bottom:0; width:100%; color:#0b3a58;}
+.loginbm a{font-weight:bold;color:#0b3a58;}
+.loginbm a:hover{color:#fff;}
+/*修改图片路径，注意当前路径指的是css所在区路径，特别注意*/
+
